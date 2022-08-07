@@ -25,6 +25,7 @@ def cariJadwalSholat(citycode):
     print(f'-isya  : {result_json["data"]["jadwal"]["isya"]}')
 
 
+print('===== PROGRAM JADWAL SHOLAT MENGGUNAKAN PYTHON =====')
 cari_kota = input('Masukan Lokasi: ')
 request_cari_API = requests.get(
     f'https://api.myquran.com/v1/sholat/kota/cari/{cari_kota}')
@@ -33,7 +34,9 @@ data_cari = request_cari_API.text
 resultCari_json = json.loads(data_cari)
 
 if(str(resultCari_json['status']) == 'False'):
-    print(resultCari_json['message'])
+    print('===== DATA TIDAK DITEMUKAN =====')
+    # error message
+    print(resultCari_json['message', 'Masukan data berdasarkan Kota/Kabupaten!'])
 else:
     data_tempat = resultCari_json['data']
     data_length = len(data_tempat)
