@@ -129,3 +129,54 @@ print(var_set)
 # 2. Tambah elemen
 var_set.add(10)
 print(var_set)
+
+##### Dictionary
+var_dict = {
+    'nama':'Bisa.AI',
+    'age':20,
+    1:'test',
+    
+}
+print(var_dict)
+print(type(var_dict))
+print(var_dict['nama'])
+
+
+##### Konversi Tipe Data
+var_int = 3
+var_float = 4.777
+var_string = '-10'
+
+# konversi integer to float
+print(float(var_int))
+
+# konversi float to integer
+print(int(var_float))
+
+# konversi float to string
+print(str(var_float))
+
+# konversi string to integer
+print(int(var_string))
+
+var_list = [1,2,4,2,2,3]
+var_tuple = (1,5,2,3,5,4)
+var_set = {6,8,7,7,7,9,5}
+
+# konversi list to tuple
+print(tuple(var_list))
+
+# konversi list to set
+print(set(var_list))
+
+# konversi tuple to list
+print(list(var_tuple))
+
+# konversi tuple to set
+print(set(var_tuple))
+
+# konversi set to list
+print(list(var_set))
+
+# konversi set to tuple
+print(set(var_tuple))
