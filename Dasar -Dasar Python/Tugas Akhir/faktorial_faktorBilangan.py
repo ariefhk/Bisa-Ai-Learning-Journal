@@ -20,10 +20,8 @@ def faktorBilangan(angka):
 
 # Menginputkan Nilai
 nilai_faktorial = int(input('Masukan angka untuk mencari Faktorial: '))
-nilai_faktorBilangan = int(
-    input('Masukan angka untuk mencari Faktorial Bilangan: '))
+nilai_faktorBilangan = int(input('Masukan angka untuk mencari Faktorial Bilangan: '))
 
 # Print Hasil
 print(f'faktorial dari {nilai_faktorial} adalah {faktorial(nilai_faktorial)}')
-print(
-    f'faktor bilangan dari {nilai_faktorBilangan} adalah {faktorBilangan(nilai_faktorBilangan)}')
+print(f'faktor bilangan dari {nilai_faktorBilangan} adalah {faktorBilangan(nilai_faktorBilangan)}')
